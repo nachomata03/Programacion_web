@@ -1,0 +1,400 @@
+/*se le aplica a todos las etiqutas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*esto es para que a un objeto con un tamaño especifico si se le agrega un borde/padding o lo que sea no se agrande mas sino que se achica el contenido y que quede del tamaño indicado inicialmente*/
+}
+
+a{
+    text-decoration: none;
+}
+                                                                /*!-----------HEADER-----------------*/
+                                                                /*
+header nav{
+    background-color: #000;
+    padding: 20px;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div{
+    flex-direction: column;
+}
+
+header nav div h1{
+    color: #338dff;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: end;
+}
+
+
+header nav ul li{
+    display:  inline-block;    
+}
+
+header nav ul li a{
+    color: #ffffff;
+    margin: 1rem;
+}
+
+*/
+
+
+
+/*?-----------contacto-----------------*/
+
+/*?-----------productos-----------------*/
+
+
+
+/*?-----------nosotros-----------------*/
+
+/*?-----------servicios-----------------*/
+
+                                                                /*!-----------MAIN-----------------*/
+
+/*?-----------INDEX-----------------*/
+
+.hero{
+    background-image: url(../img/imagen\ hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 74vh;
+    color: #ffffff;
+}
+
+.hero div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero div h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 4px;
+    margin: 4px;
+    color: #000;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.hero div p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: #000;
+    width: 80%;
+}
+
+.Bienvenidos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Bienvenidos div{
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    margin: 5px;
+    color: #ffffff;
+
+    background-image: url(../img/img_alfajor.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    overflow:hidden
+}
+
+.Bienvenidos div h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+    top: 3vh;
+    left: 30%; /*PROBAR CON TEXT-ALING O FLEXBOX*/
+}
+
+.Bienvenidos div p{
+    font-size: 20px;
+    width: 100%;
+}
+.Bienvenidos img{
+    width:50%;
+    height: 45vh;
+    margin-right: 5px;
+}
+
+.Carrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators button{
+    background-color:rgba(176,176,255,255) !important;
+}
+.carousel .carousel-inner{
+    width: 100%;
+}
+
+.carousel .carousel-inner .active img{
+    width: 100%;
+}
+
+/*?-----------contacto-----------------*/
+
+iframe{
+    margin: 5px;
+    width: 100%;
+    height: 35vh;
+}
+
+
+.tituloform{
+    text-align: center;
+    background-color: gray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /*height: 45vh;*/
+    width: 60%;
+}
+
+form .textarea textarea{
+    width: 100%;
+}
+/*
+form .contenedor{
+    
+    border-radius: 10px;
+    
+}
+
+form .contenedor div{
+    border-bottom: 1px solid gray;
+    margin: 5px;
+    padding: 3px;
+}
+
+form .contenedor div textarea{
+    width: 365px;
+    height: 200px;
+}
+
+form .contenedor .boton{
+    margin: 5px;
+    margin-top: 10px;
+}
+
+/*?-----------productos-----------------*/
+.productos h2{
+    padding: 10px;
+}
+
+.productos .contenedor-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productos .contenedor-flex div{
+    border: solid 1px rgb(0, 0, 0);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 270px;
+}
+
+.productos .contenedor-flex div img{
+    height: 250px;
+    width: 250px;
+    display: block;
+}
+
+.productos .contenedor-flex div h3{
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.productos .contenedor-flex div p{
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.productos .contenedor-flex div a{
+    background-color: black;
+    color: white;
+    display: inline;
+    padding: 3px;
+}
+
+
+/* Grid */
+.productos .contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.productos .contenedor-grid .producto{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos .contenedor-grid .producto img{
+    width: 50%;
+    height: 40vh;
+    object-fit:contain ;
+}
+
+.productos .contenedor-grid .producto p{
+    width: 80%;
+}
+
+.productos .contenedor-grid .producto a{
+    padding: 3px;
+    margin: 2px;
+    border: solid 1px rgb(9, 0, 139);
+    border-radius: 5px;
+    background-color: black;
+    color: #ffffff;
+}
+
+/*?-----------nosotros-----------------*/
+
+section .nosotros h2{
+    background-color: rgb(78, 0, 180);
+    color: #ffffff;
+    margin: 5px;
+    padding: 3px;
+    display: inline-block;
+}
+
+section .nosotros div{
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros div .texto1{
+    justify-content: left ;
+}
+.nosotros div .texto2{
+    justify-content: right ;
+}
+
+/*?-----------servicios-----------------*/
+
+.services div h3{
+    padding: 10px;
+}
+
+.services div{
+    display: flex;
+    align-items: center;
+}
+
+.services .delivery div{
+    flex-direction: row-reverse;
+}
+
+.services .delivery div p{
+    width: 40%;
+}
+
+.services .mercadolibre{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.services .mercadolibre div p{
+    width: 40%;
+}
+
+.services .mercadolibre div img{
+    padding: 5px;
+}
+
+
+                                                                /*!-----------FOOTER-----------------*/
+
+/*?-----------INDEX-----------------*/
+#pie{
+    background-color: rgba(48, 139, 224, 0.603);
+}
+
+footer a img{
+    padding: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+/*?-----------contacto-----------------*/
+
+/*?-----------productos-----------------*/
+
+/*?-----------nosotros-----------------*/
+
+/*?-----------servicios-----------------*/
+
+
+.fixed a img{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1; 
+}
+
+                        /*TODO--------------------- MEDIA QUERIES------------------*/
+
+
+/**---------------PRODUCTOS---------------------*/
+@media screen and (max-width: 1400px) {
+    .Bienvenidos div{
+        width: 80%;
+    }
+    .Bienvenidos img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .productos .contenedor-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px){
+    .productos .contenedor-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/dulce.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/dulce.png" alt="Logo de la página">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--<nav>
+            <div>
+                <h1>Santas golosinas</h1>
+                <a href="../index.html">
+                    <img src="../img/dulce.png" alt="Logo de la página">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./servicios.html">servicios</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+            </ul> 
+        </nav>-->
+    </header>
+
+    <main>
+        <section>
+
+            <form action=""></form>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7061399992745!2d-58.47983462360561!3d-34.68736536192167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceb2552c17bf%3A0x2d3d3106cae4f6ff!2sCoronel%20Martiniano%20Chilavert%20%26%20Guamin%C3%AD%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725491603091!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2 class="tituloform">Contactanos</h2>
+            <!--<form action="">
+                <div class="contenedor">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="name" name="nombre" placeholder="Escribe tu nombre aqui">
+                    </div>
+
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="name" name="apellido" placeholder="Escribe tu Apellido aqui">
+                    </div>
+
+                    <div>
+                        <label for="email">Mail:</label>
+                        <input type="email" name="email" placeholder="Escribe tu email aqui">
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Escribe tu mensaje:</label>
+                        <textarea name="mensaje"></textarea>
+                    </div>
+
+                    <input class="boton" type="submit">
+                </div>
+
+            </form>-->
+
+
+                <form class="row g-3">
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Dirección opcional">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Provincia">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="number" class="form-control" id="inputZip" placeholder="Código Postal">
+                    </div>
+
+                    <div class="textarea">
+                        <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed">
+        <a href="">
+            <img src="../img/whatsapp.png" alt="foto de whatsapp">
+        </a>
+    </div>
+
+    <footer>
+        <a href="https://instagram.com" target="_blank">
+            <img src="../img/instagram (1).png" alt="Logo de instagram">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="../img/facebook (1).png" alt="Logo de facebook">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="../img/logotipos.png" alt="Logo de twitter">
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
