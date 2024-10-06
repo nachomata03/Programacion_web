@@ -9,54 +9,55 @@ a{
     text-decoration: none;
 }
                                                                 /*!-----------HEADER-----------------*/
-                                                                /*
-header nav{
-    background-color: #000;
-    padding: 20px;
-    height: 25vh;
-    display: flex;
-    justify-content: space-between;
+
+/*?------------index--------------------*/
+header{
+    background-color:#adadf3;
 }
 
-header nav div{
-    flex-direction: column;
+header nav .collapse ul li a:hover{
+    color:#ffffff
 }
-
-header nav div h1{
-    color: #338dff;
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    align-items: end;
-}
-
-
-header nav ul li{
-    display:  inline-block;    
-}
-
-header nav ul li a{
-    color: #ffffff;
-    margin: 1rem;
-}
-
-*/
-
-
 
 /*?-----------contacto-----------------*/
+header{
+    background-color:#adadf3;
+}
 
+header nav .collapse ul li a:hover{
+    color:#ffffff
+}
 /*?-----------productos-----------------*/
+header{
+    background-color:#adadf3;
+}
 
+header nav .collapse ul li a:hover{
+    color:#ffffff
+}
 
 
 /*?-----------nosotros-----------------*/
+header{
+    background-color:#adadf3;
+}
 
+header nav .collapse ul li a:hover{
+    color:#ffffff
+}
 /*?-----------servicios-----------------*/
+header{
+    background-color:#adadf3;
+}
 
+header nav .collapse ul li a:hover{
+    color:#ffffff
+}
                                                                 /*!-----------MAIN-----------------*/
+
+
+
+
 
 /*?-----------INDEX-----------------*/
 
@@ -103,17 +104,10 @@ header nav ul li a{
 }
 
 .Bienvenidos div{
-    width: 50%;
-    height: 50vh;
+    /*width: 30%;
+    height: 50vh;*/
     text-align: center;
     margin: 5px;
-    color: #ffffff;
-
-    background-image: url(../img/img_alfajor.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size:cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +123,12 @@ header nav ul li a{
     left: 30%; /*PROBAR CON TEXT-ALING O FLEXBOX*/
 }
 
-.Bienvenidos div p{
+.Bienvenidos div div img{
+    width: 30%;
+    height: 30vh;
+}
+
+.Bienvenidos div div p{
     font-size: 20px;
     width: 100%;
 }
@@ -182,28 +181,6 @@ form {
 
 form .textarea textarea{
     width: 100%;
-}
-/*
-form .contenedor{
-    
-    border-radius: 10px;
-    
-}
-
-form .contenedor div{
-    border-bottom: 1px solid gray;
-    margin: 5px;
-    padding: 3px;
-}
-
-form .contenedor div textarea{
-    width: 365px;
-    height: 200px;
-}
-
-form .contenedor .boton{
-    margin: 5px;
-    margin-top: 10px;
 }
 
 /*?-----------productos-----------------*/
@@ -378,10 +355,23 @@ footer a img{
 
 /**---------------PRODUCTOS---------------------*/
 @media screen and (max-width: 1400px) {
-    .Bienvenidos div{
-        width: 80%;
+    .Bienvenidos div .divMedia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
-    .Bienvenidos img{
+
+    .Bienvenidos div .divMedia p{
+        width: 40%;
+    }
+
+    .Bienvenidos div .divMedia img{
+        width: 50%;
+        height: 60vh;
+    }
+
+    .Bienvenidos .BienvenidosImg{
         display: none;
     }
 
